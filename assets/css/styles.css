@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background: #081b25;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    opacity: 0.7;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #333; /* Adjust the text color */
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(meghs.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+	max-width: 600px;
+}
+
+.home-content h3 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.home-content h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin: -3px 0;
+
+}
+
+.home-content p {
+	font-size: 20px;
+	font-weight: ;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /* Fix the typo and remove the space */
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px; /* Note: consider using a specific font size value, e.g., "16px" */
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover{
+	background: #0ef;
+	color: #081b29;
+	box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+	display: inline-block;
+	padding: 12px 28px;
+	background: #0ef;
+	border-radius: 40px;
+	font-size: 16px;
+	color: #081b29;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+
+}
+.btn-box:hover{
+	background: #0ef;
+	color: #081b29;
+	box-shadow: 0 0 20px #0ef;
+}
+
+
+
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap:  1.5 rem;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.about-img img{
+	padding-left: 20%;
+	padding-bottom: 20%
+	max-width: 630px;
+	height: auto;
+	width: 75%;
+	border-radius: 8px;
+
+}
+.about-text{
+	padding-right: 10px;
+}
+.about-text h2{
+	font-size: 60px;
+}
+
+.about-text h2 span{
+	color: #0ef;
+}
+
+.about-text h4{
+	font-size: 29px;
+	font-weight: 600;
+	color: #0fff;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+
+.about-text p{
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 4rem;
+	text-align: justify;
+	padding-right: 30px;
+
+}
+.edu-title h2{
+		font-size: 60px;
+	padding-left: 50px;
+	text-align: center;
+	padding-top: 60px;
+	font-weight: 600;
+	color: #0fff;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+
+.edu-title h2 span{
+	color: #0ef;
+}
+.education-cards {
+    display: flex;
+    gap: 10px; /* Adjust the gap between cards */
+    align-content: center;
+    padding-left: 125px;
+}
+.bx bxs-graduation{
+	color: black;
+	size: 5px;
+
+}
+.education-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Adjust the width of each card */
+    background-color: lightcyan;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.education-card i {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.education-card h3 {
+    margin: 0;
+    color: black;
+    padding-left: 20px;
+    font-weight: normal;
+}
+.education-card h2 {
+    margin: 0;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-bottom: 7px;
+
+}
+.education-card h4 {
+    margin: 5px 0;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 18;
+}
+
+.education-card p {
+    margin: 5px 0;
+    color: black;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+
+.experience{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: right;
+	gap:  1.5 rem;
+}
+
+.experience-text{
+	padding-right: 50px;
+	padding-left: 20px;
+}
+
+
+.experience-text h4{
+	font-size: 29px;
+	font-weight: 600;
+	color: #0fff;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+
+.experience-text p{
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 4rem;
+	text-align: justify;
+	padding-left: 75px;
+
+}
+.experience-title h2{
+	font-size: 60px;
+	padding-left: 50px;
+	text-align: center;
+	padding-top: 80px;
+	font-weight: 600;
+	color: #0fff;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+
+.experience-title h2 span{
+	color: #0ef;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap:  1rem;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+.skills-title{
+		font-size: 60px;
+	padding-left: 50px;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: 600;
+	color: #0fff;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+
+}
+.skills-title h2 span{
+	color: #0ef;
+}
+.skill-badge {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #0ef; /* Adjust the color as needed */
+    color: #000;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-level {
+    background-color: #0ef; /* Adjust the color as needed */
+    height: 20px;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+    border-radius: 5px;
+}
+.skills__subtitle {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(20px); /* Initial position off-screen */
+            transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+        }
+.main-text{
+	margin-top: 50px;
+
+}
+
+.main-text h2{
+	font-size: 60px;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.main-text h2 span{
+	color:  #0ef;
+}
+
+.portfolio-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+	column-gap: 0px;
+
+}
+
+.row{
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	cursor: pointer;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+.row img{
+	width: 100%;
+	border-radius: 8px;
+	display: block;
+	transition: transform 0.5s;
+
+}
+
+.level{
+	width: 75%;
+	height: 0;
+	background: linear-gradient(rgba(0, 0, 0.1),#0ef);
+	position: absolute;
+	border-radius: 8px;
+	left: 20;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 40px;
+	transition: height 0.5s;
+
+}
+.layer{
+	width: 75%;
+	height: 0;
+	background: linear-gradient(rgba(0, 0, 0.1),#0ef);
+	position: absolute;
+	border-radius: 8px;
+	left: 20;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 40px;
+	transition: height 0.5s;
+
+}
+.layer h5{
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.layer p{
+	color: white;
+	font-size: 1rem;
+	line-height: 1.8;
+
+}
+
+
+.layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /* Fix the typo and remove the space */
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px; /* Note: consider using a specific font size value, e.g., "16px" */
+    color: white;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.layer a:hover{
+	background: #0ef;
+	color: #081b29;
+	box-shadow: 0 0 20px #0ef;
+	}
+.row:hover img{
+	transform: scale(1.1);
+
+}
+.row:hover .layer{
+	height: 100%;
+}
+
+
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-text h2 {
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span {
+    color: #0ef;
+}
+
+.contact-text h4 {
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 15px;
+}
+
+.contact-list i {
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.contact-list li a:hover {
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: sideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i)); /* Fix spacing here */
+}
+
+.contact-icons i:hover {
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.7;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.last-word p{
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	background: rgb(7, 85, 91);
+	font-weight: 300;
+	margin-top: 70px;
+
+}
+.top{
+	position: fixed;
+	bottom: 2.1rem;
+	right: 2,1rem;
+}
+.top i{
+	color: #000;
+	background: #0ef;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 0.5rem;
+}
